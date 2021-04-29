@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+html , body{
+    font-family: 'Righteous', cursive !important;
+}
+
+
+/*==================================
+  nav bare 
+ =======================*/
+ 
+.navbar-container{
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 11111;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.nav-item{
+    min-width: 200px;
+    text-align: center;
+}
+
+.nav-item .dropdown-menu{
+  width: 1920px;
+  height: 80vh;
+  font-size: 2rem;
+  
+
+}
+
+
+.dropdown-menu a{
+  color: rgb(71, 71, 71) !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500 !important;
+}
+.nav-link:hover{
+  color: rgb(159, 212, 13) !important;
+}
+
+
+.nav-icons i{
+    min-width: 70px !important;
+}
+
+
+.banner-nav{
+  margin: 0 auto  !important;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+
+}
+.banner-nav li{
+  min-width: 200px;
+  list-style: none;
+  text-align: center;
+  font-weight: 100 !important;
+}
+
+/* banner section starts here  */
+.banner{
+    background-image: url("https://www.purseblog.com/images/2016/02/Mulberry-Bags-Fall-2016-11.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    position: relative;
+    top: 150px;
+}
+.fixed-img{
+    position: fixed;
+    top: 200px;
+    right: 5px;
+    width: 250px;
+    z-index: 111;
+}
+
+/*88888888888888888888888888888888888888888    carousol section starts here 777777777777777777777777777777777777 */
+.carousel .item {
+    padding-bottom: 56.25%;
+    background-size: cover;
+  }
+  .carousel-indicators{
+      position: fixed !important;
+      top: 300px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .carousel-indicators li{
+      background-color: black !important;
+      height: 10px;
+      
+  }
+
+  .carousel-indicators li.active{
+      border: solid rgb(0, 0, 0) 2px;
+      background-color: rgb(255, 255, 255) !important;
+  }
+
+  .carousel.vertical .carousel-inner > .item {
+    transition: 0.6s ease-in-out top;
+  }
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel.vertical .carousel-inner > .item {
+      transition: transform 0.6s ease-in-out;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -ms-perspective: 1000;
+      perspective: 1000;
+    }
+    .carousel.vertical .carousel-inner > .item.next,
+    .carousel.vertical .carousel-inner > .item.active.right {
+      top: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    .carousel.vertical .carousel-inner > .item.prev,
+    .carousel.vertical .carousel-inner > .item.active.left {
+      top: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    .carousel.vertical .carousel-inner > .item.next.left,
+    .carousel.vertical .carousel-inner > .item.prev.right,
+    .carousel.vertical .carousel-inner > .item.active {
+      top: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .carousel.vertical .carousel-inner > .active {
+    top: 0;
+  }
+  .carousel.vertical .carousel-inner > .next,
+  .carousel.vertical .carousel-inner > .prev {
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .carousel.vertical .carousel-inner > .next {
+    left: 0;
+    top: 100%;
+  }
+  .carousel.vertical .carousel-inner > .prev {
+    left: 0;
+    top: -100%;
+  }
+  .carousel.vertical .carousel-inner > .next.left,
+  .carousel.vertical .carousel-inner > .prev.right {
+    top: 0;
+  }
+  .carousel.vertical .carousel-inner > .active.left {
+    left: 0;
+    top: -100%;
+  }
+  .carousel.vertical .carousel-inner > .active.right {
+    left: 0;
+    top: 100%;
+  }
+  .carousel.vertical .carousel-indicators,
+  .carousel-indicators-vertical {
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    bottom: auto;
+    left: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .carousel.vertical .carousel-indicators li,
+  .carousel-indicators-vertical li {
+    display: block;
+    margin: 5px 0;
+}
+
+
+/*88888888888888888888888888888888888888888    carousol section ends here 777777777777777777777777777777777777 */
+
+.mous{
+    width: 40px;
+    height: 60px;
+    border: solid rgb(0, 0, 0) 3px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 40px;
+    margin: 0 auto;
+    left: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+}
+
+.mous .line{
+    width: 4px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: slidein;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+
+
+@keyframes slidein {
+    from {
+        top: -10px;
+    }
+  
+    to {
+        top: 10px
+    }
+  }
+
